@@ -9,8 +9,8 @@ JATTACH=jattach
 API_JAR=async-profiler.jar
 CONVERTER_JAR=converter.jar
 
-CFLAGS=-O3
-CXXFLAGS=-O3 -fno-omit-frame-pointer -fvisibility=hidden
+CFLAGS=-O3 -g -ggdb
+CXXFLAGS=-O3 -g -ggdb -fno-omit-frame-pointer -fvisibility=hidden
 INCLUDES=-I$(JAVA_HOME)/include
 LIBS=-ldl -lpthread
 MERGE=true
